@@ -1,0 +1,35 @@
+.small-container {
+  max-width: 90%;
+  margin: 150px auto 0;
+}
+
+/*--------------------- news--------------------- */
+
+.news__list {
+  margin-top: 30px;
+  padding: 15px 0 30px;
+}
+
+.news__list li {
+  border-top: 2px solid #d3d3d3;
+  padding: 20px 0;
+  display: flex;
+}
+
+.news__list li:last-child {
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.news__list h2 {
+  font-size:20pt;
+  padding: 0px 0px 10px 50px;
+}
+
+.news__list p {
+  font-size: 12pt;
+  padding: 0px 0px 0px 50px;
+}
+
+.news__list-photo {
+  width: 300px;
+}

@@ -1,0 +1,39 @@
+.small-container {
+  max-width: 70%;
+  margin: 150px auto 0;
+}
+
+.company-table {
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  border:none;
+}
+
+.company-table__th {
+  padding: 15px 0 15px 15px;
+  width: 30%;
+  text-align:center;
+  border-top: 2px solid #ccc;
+}
+
+.company-table__td {
+  padding: 15px 0 15px 15px;
+  width: 70%;
+  border-top: 2px solid #ccc;
+}
+
+.company-table__th_last {
+  padding: 15px 0 15px 15px;
+  width: 30%;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.company-table__td_last {
+  padding: 15px 0 15px 15px;
+  width: 70%;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}

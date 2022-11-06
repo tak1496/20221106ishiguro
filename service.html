@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COACHTECH</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/service.css" />
+</head>
+
+<body>
+  <header class="header flex__item">
+    <div class="header__logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list flex__item">
+        <li>
+          <a href="index.html" class="header__nav-list-link">ホーム</a>
+        </li>
+        <li>
+          <a href="service.html" class="header__nav-list-link">事業内容</a>
+        </li>
+        <li>
+          <a href="blog.html" class="header__nav-list-link">社員ブログ</a>
+        </li>
+        <li>
+          <a href="company_detail.html" class="header__nav-list-link">会社概要</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="hamburger-menu" class="hamburger-menu">
+      <span class="line-top"></span>
+      <span class="line-middle"></span>
+      <span class="line-bottom"></span>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="blog.html">社員ブログ</a></li>
+        <li><a href="company_detail.html">会社概要</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="firstview">
+      <div class="firstview__banner">
+        <h2 class="firstview__item-ttl">事業内容</h2>
+      </div>
+    </div>
+
+    <div id="news" class="small-container">
+      <ul class="news__list">
+        <li>
+          <span>
+            <img src="./img/service1.png" class="news__list-photo">
+          </span>
+          <span class="news__list-detail">
+            <h2>IT人材育成事業</h2>
+            <p>これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。</p>
+          </span>
+        </li>
+        <li>
+          <span>
+            <img src="./img/service2.png" class="news__list-photo">
+          </span>
+          <span class="news__list-detail">
+            <h2>コーチング事業</h2>
+            <p>目標達成を最短で実現するために、プロのコーチによるマンツーマンのサポートを実施します。</p>
+          </span>
+        </li>
+        <li>
+          <span>
+            <img src="./img/service3.png" class="news__list-photo">
+          </span>
+          <span class="news__list-detail">
+            <h2>ITコンサル事業</h2>
+            <p>経営戦略にIT戦略を策定し、システム開発の提案やシステムに最適化を通じて、企業の経営をサポートします。</p>
+          </span>
+        </li>
+        <li>
+          <span>
+            <img src="./img/service4.png" class="news__list-photo">
+          </span>
+          <span class="news__list-detail">
+            <h2>デジタルトランスフォーメーション事業</h2>
+            <p>人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <h2 class="common__ttl">お問い合わせ</h2>
+        <p class="contact-content">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
+      </div>
+      <a id="contact_openBtn" class="service__link">お問い合わせ</a>
+    </div>
+  </main>
+
+  <footer class="footer flex__item">
+    <p>@2020 TECH inc.</p>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list flex__item">
+        <li>
+          <span class="footer__nav-list__item">
+            <a href="index.html" class="footer__nav-list-link">ホーム</a>
+          </span>
+        </li>
+        <li>
+          <span class="footer__nav-list__item">
+            <a href="service.html" class="footer__nav-list-link">事業内容</a>
+          </span>
+        </li>
+        <li>
+          <span class="footer__nav-list__item">
+            <a href="blog.html" class="footer__nav-list-link">社員ブログ</a>
+          </span>
+        </li>
+        <li>
+          <span>
+            <a href="company_detail.html" class="footer__nav-list-link">会社概要</a>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <div class="modal__content-inner">
+  
+        <form class="form" name="contact" method="POST">
+          <div class="form-item">
+            <p class="form-item-label">
+              <span class="form-item-label-required">必須</span>会社名
+            </p>
+            <input type="text" name="company" class="form-item-input" placeholder="例）株式会社TECH">
+          </div>
+          <div class="form-item">
+            <p class="form-item-label"><span class="form-item-label-required">必須</span>氏名</p>
+            <input type="text" name="name" class="form-item-input" placeholder="例）山田太郎">
+          </div>
+          <div class="form-item">
+            <p class="form-item-label"><span class="form-item-label-required">必須</span>電話番号</p>
+            <input type="tel" name="tel" class="form-item-input" placeholder="例）09012345678">
+          </div>
+          <div class="form-item">
+            <p class="form-item-label"><span class="form-item-label-required">必須</span>メールアドレス</p>
+            <input type="email" name="email" class="form-item-input" placeholder="例）test@example.com">
+          </div>
+          <div class="form-item">
+            <p class="form-item-label"><span class="form-item-label-required">必須</span>お問い合わせ内容</p>
+            <textarea name="textarea" class="form-item-textarea"></textarea>
+          </div>
+          <input type="submit" class="form-btn" value="送信する">
+        </form>
+  
+        <input type="button" id="closeBtn" value="閉じる">
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top" id="scroll_btn" onclick="scroll_top();">↑</button>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
