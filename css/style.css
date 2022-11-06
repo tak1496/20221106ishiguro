@@ -1,3 +1,9 @@
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.6;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -10,10 +16,6 @@ a {
 
 li {
   list-style: none;
-}
-
-body {
-  line-height: 1.7;
 }
 
 .flex__item {
@@ -34,6 +36,13 @@ body {
   text-align: center;
 }
 
+.closeBtn {
+  border: none;
+  background-color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
 /*--------------------- header--------------------- */
 .header {
   height: 70px;
@@ -47,7 +56,7 @@ body {
 }
 
 .header__logo {
-  width: 100px;
+  width: 70px;
   margin-left: 40px;
 }
 
@@ -195,6 +204,16 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+.firstview__item {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: block;
+    transition: 0.4s;
+    background: url(../img/mv.png) no-repeat;
+    background-size: cover;
+  }
+
 .firstview__banner {
     position: relative;
     height: 15vh;
@@ -364,11 +383,17 @@ body {
 /*---------------------blog--------------------- */
 #blog {
   margin-top: 80px;
-  padding: 40px 0;
+  padding: 40px 0 80px 0;
+}
+
+.blog_container {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .blog-wrap {
   margin-top: 30px;
+  padding-bottom:20px;
 }
 
 .blog-wrap__item {
@@ -379,9 +404,8 @@ body {
 
 .blog-wrap__item-content {
   background: #fff;
-  border-radius: 0 0 15px 15px;
-  padding: 20px;
-  margin-top: -7px;
+  padding: 0;
+  padding-top:10px;
 }
 
 .blog-wrap__item-eyecatch {
@@ -391,6 +415,10 @@ body {
 .blog-wrap__item-content-tag {
   font-size: 14px;
   padding-bottom:10px;
+}
+
+.blog-wrap__item-content-ttl {
+  font-size: 19px;
 }
 
 .blog__link {
@@ -410,6 +438,23 @@ body {
   background-color: #b31566;
   color: #fff;
   transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog-wrap__item {
+    width: 100%;
+    margin-right: 0;
+    padding-bottom:20px;
+  }
+
+  .blog-wrap__item-content {
+    background: #fff;
+  }
 }
 
 /*---------------------company--------------------- */
@@ -435,6 +480,37 @@ body {
 .company__item h2 {
   font-size: 20pt;
     width:100%;
+}
+
+.top-company-list {
+  padding: 80px 0;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.top-company-item {
+  width: 100%;
+}
+
+.top-company-link {
+  background-color: #cd0224;
+}
+
+.top-company-link:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.top-company-item-link {
+  color:#fff;
+  font-size: 30px;
+  display: inline-block;
+  width: 100%;
+  line-height: 10;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -531,71 +607,60 @@ body {
 
 /*---------------------footer--------------------- */
 .footer {
-  height: 60px;
-  line-height: 60px;
-  font-size: 14px;
-  margin-top: 80px;
-  background: #000;
-  color:#fff;
-  text-align: center;
-  padding: 0 80px;
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
 }
 
-.footer__nav {
-  margin-right: 40px;
+.footer-inner {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  width: 85%;
 }
 
-.footer__nav-list li {
-  margin-right: 25px;
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.footer__nav-list__item {
-  padding: 0 20px 0 0;
-  border-right: 1px solid #fff;
-}
-
-
-.footer__nav-list li:last-child {
-  margin-right: 0;
-}
-
-.footer__nav-list-link {
-  height: 70px;
-  display: inline-block;
-  font-weight: bold;
+.footer_link{
   color: #fff;
 }
 
+.footer-nav-item:after {
+  content: "|";
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-nav-item:last-child:after {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
-  .footer {
-    height: 40px;
-    line-height: 40px;
-    font-size: 40%;
-    margin-top: 80px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 0;
-  }
-
-  .footer__nav {
-    margin-right: 0px;
-  }
-
-  .footer__nav-list li {
-    margin-right: 5%;
-  }
-
-  .footer__nav-list__item {
-    padding: 0 15px 0 0;
-    border-right: 1px solid #fff;
-  }
-
-
-  .footer__nav-list li:last-child {
-    margin-right: 10px;
-  }
+  .footer-copyright {
+      width: 50%;
+      text-align: center;
+    }
+  
+    .footer-nav {
+      width: 50%;
+    }
+  
+    .footer-nav-item {
+      text-align: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .footer-nav-item:after {
+      display: none;
+    }
 }
 
 /*---------------------modal--------------------- */
@@ -607,6 +672,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .modal__content {
@@ -618,9 +684,76 @@ body {
 
 .modal__content-inner {
   background-color: white;
-  width: 80%;
+  height: 600px;
+  width: 700px;
+  text-align: left;
+  padding: 20px;
+}
+
+.modal__closeBtn {
+  text-align: right;
+}
+
+.modal-contact-ttl {
   text-align: center;
-  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* contact */
+
+.top-contact-ttl {
+  text-align: center;
+}
+
+.contact-form-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.contact-form-item-name {
+  font-weight: bold;
+}
+
+.contact-form-item-input {
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-form-item-textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  resize: none;
+}
+
+.contact-form-item-required {
+  color: #cd0224;
+  margin-left: 5px;
+}
+
+.contact-form-submit {
+  width: 300px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border: none;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
 }
 
 /*---------------------scroll--------------------- */
