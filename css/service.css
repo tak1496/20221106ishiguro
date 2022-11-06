@@ -33,3 +33,20 @@
 .news__list-photo {
   width: 300px;
 }
+
+@media screen and (max-width: 768px) {
+  .news__list li{
+    display: flex;
+    flex-flow: column;
+  }
+
+  .news__list h2 {
+    font-size: 120%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .news__list p {
+    font-size: 80%;
+    padding: 10px 0px 0px 0px;
+  }
+}

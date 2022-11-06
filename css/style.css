@@ -194,6 +194,27 @@ body {
   font-size: 14pt;
 }
 
+@media screen and (max-width: 768px) {
+.firstview__banner {
+    position: relative;
+    height: 15vh;
+    background-image: url(../img/mv.png);
+    background-position: right 0% bottom 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .firstview__item-ttl {
+    font-size:120%;
+    width:90%;
+    text-align:center;
+  }
+
+  .firstview__item-txt {
+    width: 80%;
+    font-size: 80%;
+  }
+}
 /*---------------------content--------------------- */
 
 #content {
@@ -219,6 +240,17 @@ body {
   padding: 0px 0px 30px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .content_container {
+    width:80%;
+  }
+  .content__item h2 {
+    font-size:120%;
+  }
+  .content__item-txt{
+    font-size: 80%;
+  }
+}
 /*--------------------- service--------------------- */
 
 #service {
@@ -290,6 +322,45 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+.service-wrap {
+    display: grid;
+    grid-template-rows: 350px 350px 350px 350px;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+.service-wrap__item img {
+  display: inline-block;
+
+  margin: 0 auto;
+  display: block;
+}
+
+.service-wrap__item--first {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .service-wrap__item--second {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .service-wrap__item--third {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .service-wrap__item--forth {
+    grid-column: 1/1;
+    grid-row: 4/5;
+    padding: 10px 10px 10px 10px;
+  }
+}
 /*---------------------blog--------------------- */
 #blog {
   margin-top: 80px;
@@ -363,9 +434,14 @@ body {
 
 .company__item h2 {
   font-size: 20pt;
-  padding: 0px 0px 30px 0px;
+    width:100%;
 }
 
+@media screen and (max-width: 768px) {
+  #company {
+    height: 10vh;
+  }
+}
 /*---------------------contact--------------------- */
 #contact {
   margin-top: 80px;
@@ -488,6 +564,38 @@ body {
   display: inline-block;
   font-weight: bold;
   color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 40px;
+    line-height: 40px;
+    font-size: 40%;
+    margin-top: 80px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer__nav {
+    margin-right: 0px;
+  }
+
+  .footer__nav-list li {
+    margin-right: 5%;
+  }
+
+  .footer__nav-list__item {
+    padding: 0 15px 0 0;
+    border-right: 1px solid #fff;
+  }
+
+
+  .footer__nav-list li:last-child {
+    margin-right: 10px;
+  }
 }
 
 /*---------------------modal--------------------- */
